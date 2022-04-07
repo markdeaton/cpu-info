@@ -23,7 +23,11 @@
         android:theme="@style/AppThemeBase"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:supportsRtl"
-        tools:targetApi="n">
+        tools:targetApi="M">
+
+        <meta-data
+            android:name="com.robotemi.sdk.metadata.SKILL"
+            android:value="@string/app_name" />
 
         <activity
             android:name="com.kgurgul.cpuinfo.features.HostActivity"
@@ -31,7 +35,6 @@
             android:theme="@style/AppThemeBase.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
