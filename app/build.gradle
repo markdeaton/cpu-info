@@ -57,6 +57,14 @@ android {
             applicationIdSuffix ".debug"
         }
     }
+    splits {
+        abi {
+            enable true
+            reset()
+            include "armeabi-v7a"
+            universalApk false
+        }
+    }
 
     externalNativeBuild {
         cmake {

@@ -10,6 +10,7 @@ buildscript {
         minSdk = 16
         targetSdk = 30
         compiledSdk = 30
+        agp_version = '7.1.2'
     }
 
     repositories {
@@ -22,6 +23,7 @@ buildscript {
         classpath Libs.gradleVersionsPlugin
         classpath Libs.Kotlin.gradlePlugin
         classpath Libs.Hilt.gradlePlugin
+        classpath "com.android.tools.build:gradle"
     }
 }
 
